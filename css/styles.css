@@ -1,0 +1,19 @@
+.profile-image {
+  max-width: 80%;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.card {
+  padding: 1em;
+}
+
+.main-nav {
+  list-style: none;
+}
+
+.main-nav a {
+  text-decoration: none;
+}
