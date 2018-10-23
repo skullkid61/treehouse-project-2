@@ -1,19 +1,57 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #4a4a4a;
+  margin: 0 auto;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+header, footer {
+  background-color: #eeeeee;
+  margin: 0 auto;
+}
+h1{
+  margin-top: 0;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+nav li {
+  background-color: #ffffff ;
+  margin: 1em;
+}
+
+/* ---- Layout Containers ---- */
+
+.container {
+  width: 70%;
+}
+
 .profile-image {
   max-width: 80%;
 }
 
 .card img {
-  max-width: 100%;
+  width: 100%;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
-.card {
-  padding: 1em;
-}
-
-.main-nav {
-  list-style: none;
-}
-
-.main-nav a {
-  text-decoration: none;
-}
