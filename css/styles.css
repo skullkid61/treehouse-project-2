@@ -83,6 +83,9 @@ nav li {
   padding: 0 1em;
   margin: 0 auto;
 }
+.head {
+  margin-bottom: 1em;
+}
 .head-info {
   padding: 2em 1em;
   display: inline-block;
