@@ -13,6 +13,11 @@ body {
   line-height: 1.6em;
   background-color: #fafafa;
 }
+main {
+  background-color: #ffffff;
+  max-width: 1024px;
+  margin: 0 auto;
+}
 p {
   font-family: Krub, sans-serif;
 }
@@ -76,10 +81,12 @@ nav li {
 
 .container {
   padding: 0 1em;
+  margin: 0 auto;
 }
 .head-info {
   padding: 2em 1em;
   display: inline-block;
+  max-width: 1024px;
 }
 .introduction {
   vertical-align: top;
@@ -89,6 +96,9 @@ nav li {
 }
 .cards {
   background-color: #ffffff;
+  padding: 0 1em;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 .card {
   float: left;
@@ -157,7 +167,7 @@ nav li {
   .card p {
     padding: 0 1em;
   }
-  .contact {
+  .contact p {
     font-size: 1.4em;
     padding: 0 2em;
   }
@@ -169,10 +179,34 @@ nav li {
   }
 }
 
-/* ---- 768px wide ---- */
+/* ---- 1024px wide ---- */
 
 @media (min-width: 1024px) {
+  .head {
+    max-width: 1024px;
+  }
+  main {
+    max-width: 974px;
+  }
+  .top-nav {
+    margin-top: 2em;
+  }
+  .container {
+    padding: 0 40px;
+  }
   .card {
-    width: 30%;
+    width: 33.3%;
+  }
+  .name {
+    float: left;
+    padding-bottom: 1em;
+    margin: 0;
+  }
+  nav {
+    float: right;
+    padding: 0 1em;
+  }
+  .contact p {
+    padding: 0 18%;
   }
 }
