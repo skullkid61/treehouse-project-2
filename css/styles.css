@@ -9,18 +9,36 @@ body {
   color: #4a4a4a;
   margin: 0 auto;
   text-align: center;
+  font-family: ubuntu, sans-serif;
+  line-height: 1.6em;
+  background-color: #fafafa;
 }
-
+p {
+  font-family: Krub, sans-serif;
+}
 a {
   text-decoration: none;
+  color: #4a4a4a;
+  font-weight: 700;
 }
 
 header, footer {
-  background-color: #eeeeee;
+  background-color: #fafafa;
   margin: 0 auto;
 }
-h1{
+
+footer {
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+h1, h4 {
   margin-top: 0;
+  padding-top: 1em;
+}
+h4 {
+  text-transform: uppercase;
+  font-size: 1em;
+  margin: 2em 0;
 }
 
 /* ================================= 
@@ -35,23 +53,126 @@ nav ul {
   list-style-type: none;
 }
 nav li {
-  background-color: #ffffff ;
-  margin: 1em;
+  background-color: #ffffff;
+  margin: .5em;
+  text-transform: uppercase;
+  padding: 1em 0;
 }
+.footer-name {
+  float: left;
+}
+.top {
+  float: right;
+  text-transform: uppercase;
+  font-size: .8em;
+}
+.foot {
+  background-color: #fafafa;
+  padding: 1em 0;
+}
+
 
 /* ---- Layout Containers ---- */
 
 .container {
-  width: 70%;
+  padding: 0 1em;
 }
-
+.head-info {
+  padding: 2em 1em;
+  display: inline-block;
+}
+.introduction {
+  vertical-align: top;
+}
 .profile-image {
-  max-width: 80%;
+  max-width: 70%;
 }
-
+.cards {
+  background-color: #ffffff;
+}
+.card {
+  float: left;
+  margin-bottom: 1em; 
+}
 .card img {
   width: 100%;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-bottom: 5px;
 }
 
+.contact, .contact a {
+  color: #7f7f7f;
+}
+
+
+/* ---- Clear Fix ---- */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+/* ---- bottom nav fix ---- */
+
+@media (max-width: 767px) {
+  .bottom-nav {
+    display: none;
+  }
+}
+
+/* ---- 768px wide ---- */
+
+@media (min-width: 768px) {
+  header {
+    padding-top: 1em;
+    padding-bottom: 2em;
+  }
+  nav li {
+    display: inline;
+    background-color: #fafafa;
+  }
+  .profile-image {
+    float: right;
+    margin-left: 1em;
+    max-width: 40%;
+  }
+  .head-info {
+    font-size: 1.4em;
+    vertical-align: top;
+    text-align: left;
+  }
+  .head-info p {
+    margin-top: 0;
+  }
+  .container {
+    padding: 1em;
+  }
+  .card {
+    width: 50%;
+    padding: 0 .5em;
+  }
+  .card p {
+    padding: 0 1em;
+  }
+  .contact {
+    font-size: 1.4em;
+    padding: 0 2em;
+  }
+  .top {
+    display: none;
+  }
+  .bottom-nav {
+    float: right;
+  }
+}
+
+/* ---- 768px wide ---- */
+
+@media (min-width: 1024px) {
+  .card {
+    width: 30%;
+  }
+}
